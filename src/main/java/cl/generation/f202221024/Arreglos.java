@@ -98,17 +98,28 @@ public class Arreglos {
 		int[] pares = new int [numa10.length];
 		for(int i = 0;i < numa10.length;i++)
 		{
-			if(numa10[i] % 2 == 0)
+			if(numa10[i] % 2 == 0) //obtenemos el par con el resto de la división (%)
 			{
-				pares[i] = numa10[i];
+				pares[i] = numa10[i]; // es decir, si el resto de la división es igual a 0, la posición 0 del arreglo PARES toma el valor de la posición 0 del arreglo NUMA10.
 			}
 			else
 			{
-				impares[i] = numa10[i];
+				impares[i] = numa10[i]; // de lo contrario, si el resto de la división no es igual a 0, la posición del arreglo IMPARES toma el valor de la posición 0,1,2,3.. del arreglo NUMA10.
 			}
 		}
 		System.out.println(Arrays.toString(pares));
 		System.out.println(Arrays.toString(impares));
+		
+		
+		//ejercio 3
+		
+		float sumanumeros = 0;
+		for(int i = 0; i < numa10.length;i++)
+		{
+			sumanumeros = sumanumeros + numa10[i];
+		}
+		System.out.println(sumanumeros/10);
+		
 		
 			
 		
