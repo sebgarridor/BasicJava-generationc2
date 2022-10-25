@@ -75,14 +75,15 @@ public class Arreglos {
 		System.out.println(Arrays.toString(arreglo100a1));
 
 		//ejercicio 1
-		int[] numa10 = {-3,-5, 4,12, 3,35, -35,77,-1, 0};
-		int maxNuma10 = 0;
-		int minNuma10 = 0;
+		int[] numa10 = {-3,-5, 4,12, 3,35, -35,77,-1, 0}; //establecer los números de la variable 
+		int maxNuma10 = 0; //asigna un número inicial para el número mayor, en este caso, 0.
+		int minNuma10 = 0; // asigna un número inicial para el número menor, en este caso, 0.
 		for (int i=0; i>=numa10.length; i++ ) {
-			numa10[i]=i;
+			numa10[i]=i; //reemplaza el numa10[i] por el número en dicha posición y lo reemplaza por i.
+			// numa10[4]= 3;
 		}
-		for (int i=0; i<numa10.length; i++ ) {
-			if (maxNuma10 < numa10[i]) {
+		for (int i=0; i<numa10.length; i++ ) { //for loop para recorrer todos los números y encontrar el número menor y mayor.
+			if (maxNuma10 < numa10[i]) { //
 				maxNuma10 = numa10[i];
 			}else if(minNuma10 > numa10[i]){
 				minNuma10 =numa10[i];

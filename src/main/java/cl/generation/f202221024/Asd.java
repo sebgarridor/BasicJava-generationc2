@@ -26,13 +26,10 @@ public class Asd {
 		
 		System.out.println("**********");
 		
-		int impares = 0;
+		int[] arreglosssnew int [3];
 		int pares = 0;
 		//impares
-		for (int = 0; i < numa10.length; i++) {
-			if ()
-			
-		}
+		for (int = 0; i < numa10.length; i++) {}
 		
 		
 		
