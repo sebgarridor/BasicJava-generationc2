@@ -14,8 +14,14 @@ public class Funciones1 {
 		metodo2("Garrido");//cada vez que llamen al método tiene que pasar un string, si pasa un int tira error.
 		metodo3(25);
 		metodo4(77, 9.9f); //aquí solicitod los dígitos que pedí en el public static void metodo4(Integer, Float)
-		String[] vocales = {"a","e","i","o","u"}; //aquí recién estoy creando el arreglo. ya estaba el formato pero no lo reconocía
-		metodo5(vocales);
+		String[] arreglito = {"a","e","i","o","u"}; //aquí recién estoy creando el arreglo. ya estaba el formato pero no lo reconocía
+		metodo5(arreglito);
+		
+		//metodos con retornos/llamados
+		
+		System.out.println(retorno1());
+		Integer valorRetornado = retorno1();
+		System.out.println(valorRetornado * retorno1());
 		 
 		
 		
@@ -50,5 +56,13 @@ public class Funciones1 {
 		System.out.println("Soy el arreglo "+ Arrays.toString(arreglito)); //es necesario usar el Arrays.toString para lograr imprimir el arreglo, de lo contrario sólo imprime la memoria
 		
 	}
+	
+	//FUNCIONES CON RETORNO
+	
+	public static Integer retorno1() { //cambiamos el void por el tipo de dato que queremos retornar. VOID IMPLICABA QUE NO HABÍA RETORNO.
+		Integer totalAlumnos = 35; //creamos variable Integer
+		return totalAlumnos;//le pido que me retorne el valor de la variable Integer
+		}  
+	
 
 }
