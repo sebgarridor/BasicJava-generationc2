@@ -32,6 +32,8 @@ public class Funciones1 {
 		Integer valorRetornado = retorno1(); // asignamos a una nueva variable de tipo integer llamada valorRetornado el
 												// valor retornado del método.
 		System.out.println(valorRetornado / 7); //
+		
+		llamadaAOtroMetodo();
 
 	}
 
@@ -89,7 +91,20 @@ public class Funciones1 {
 		String nombreCompleto = nombre + " " + apellidoPaterno + " " + apellidoMaterno; //aquí importa el orden que le otorgue a los datos
 
 		return nombreCompleto; // retornamos el contenido de la variable creada llamada nombreCompleto
+		
+		
+		//swagger = documentación, para solicitar info de APIs
+		
 
 	}
+	
+	//Metodo que llama a otro metodo
+	
+	public static void llamadaAOtroMetodo() {
+		System.out.println("Llamada a otro metodo desde un metodo");
+		metodo4(1234, 54.3f);
+	}
+		
+	
 
 }
