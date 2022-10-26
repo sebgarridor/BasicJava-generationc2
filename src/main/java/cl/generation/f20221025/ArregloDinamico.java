@@ -43,7 +43,7 @@ public class ArregloDinamico {
 		}
 		System.out.println("***********");
 
-		// 7.- for iterador o for de objeto
+		// 7.- for iterador o for de objeto/FOR EACH
 
 		for (String miembro : grupo3) { // for(TIPODEDATO individual: nombreArreglo){} individual = subcategoría del
 										// arreglo. EJ: de números -> número. esta subcategoría nace y muere dentro de este loop
