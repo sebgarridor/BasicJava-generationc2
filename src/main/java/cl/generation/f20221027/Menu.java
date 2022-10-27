@@ -108,8 +108,9 @@ public class Menu {
 				System.out.println("El resultado es "+ resultado);
 				break;
 			case 4: //division
-				if(numero2==0) {
+				if(numero1==0 || numero2==0) {
 					System.out.println("No se puede dividir por cero");
+					
 				}else {
 					resultado = numero1 / numero2;
 					System.out.println("El resultado es "+ resultado);
@@ -123,5 +124,6 @@ public class Menu {
 			
 		}
 	}
+	
 
 }
