@@ -18,6 +18,13 @@ public class Entrenador extends EquipoBasquetbol { //extends es una palabra rese
 	}
 
 
+	public Entrenador(String nombre, String apellido, int edad, int aniosExperiencia, String equipo) { //AQUI CAPTURAMOS TODOS LOS ATRIBUTOS (HEREDADOS Y PROPIOS)
+		super(nombre, apellido, edad); //captura el nombre, apellido y edad, y se los pasa al padre EquipoBasquetbol
+		this.aniosExperiencia = aniosExperiencia;
+		this.equipo = equipo;
+	}
+
+
 	public int getAniosExperiencia() {
 		return aniosExperiencia;
 	}
@@ -43,6 +50,11 @@ public class Entrenador extends EquipoBasquetbol { //extends es una palabra rese
 		return "Entrenador [aniosExperiencia=" + aniosExperiencia + ", equipo=" + equipo + ", getNombre()="
 				+ getNombre() + ", getApellido()=" + getApellido() + ", getEdad()=" + getEdad() + "]";
 	}
+/*	
+	@Override
+	public void metodoImprimir() { 
+		System.out.println("Estoy en el método de la clase hija entrenador");
+	} */
 
 
 

@@ -17,7 +17,14 @@ public class Main {
 		entrenador.setAniosExperiencia(15);
 		entrenador.setEquipo("Valdivia");
 		
+		
+		Entrenador ayudante = new Entrenador("Isra", "Palma", 42, 17, "C2");
+		
+		
+		
+		//imprimiendo los atributos de cada objeto
 		System.out.println(entrenador.toString()); //aquí sólo nos muestra sus dos atributos, no los heredados
+		System.out.println(ayudante.toString());
 		
 		Kinesiologo kine = new Kinesiologo();
 		kine.setNombre("Saul");
@@ -50,6 +57,13 @@ public class Main {
 			System.out.println(basquetbolista1.toString());
 			
 		}
+		entrenador.metodoImprimir();
+		kine.metodoImprimir();
+		basquetbolista2.metodoImprimir();
+		
+		//instancia de clase nieta
+		Ayudante ayudante1 = new Ayudante();
+		ayudante1.metodoImprimir();
 		
 		
 		

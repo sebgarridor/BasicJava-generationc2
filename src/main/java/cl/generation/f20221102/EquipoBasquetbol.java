@@ -71,5 +71,9 @@ public class EquipoBasquetbol {
 	public String toString() {
 		return "EquipoBasquetbol [nombre=" + nombre + ", apellido=" + apellido + ", edad=" + edad + "]";
 	}
+// @Override no puedo sobrescribir el método ya que aquí lo estoy creando para las clases hijas
+	public void metodoImprimir() { 
+		System.out.println("Estoy en el método de la superclase");
+	}
 
 }
