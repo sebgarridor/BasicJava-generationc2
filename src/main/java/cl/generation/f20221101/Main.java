@@ -20,14 +20,15 @@ public class Main {
 		System.out.println("Ingrese su cuarta nota");
 		float nota4 = scanner.nextFloat();
 		
-		promedio(nota1, nota2, nota3, nota4);
+		promedio(0, 0, 0, 0);
 		
 		scanner.close();
 		
 		
 	}
 	
-	public static void promedio(float nota1, float nota2, float nota3, float nota4) {
+	public static void promedio(int nota1, int nota2, int nota3, int nota4) {
+		
 		float sumaNotas = nota1 + nota2 + nota3 + nota4;
 		float promedioNotas = sumaNotas / 4;
 		System.out.println("El promedio de notas es :" + promedioNotas);
