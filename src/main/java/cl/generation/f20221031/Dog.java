@@ -5,6 +5,7 @@ public class Dog { //when I create an instance of a type,
 	
 	public String name; //private ensures that name and age are only accessible through this class
 	public int age;
+	// protected string raza; //using protected means that i can only have access to this file within this file or class-
 	
 	
 	public Dog (String name, int age) { //meaning that once we create a DOG object, we need to pass it a name and age.
