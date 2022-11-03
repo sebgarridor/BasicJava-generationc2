@@ -4,7 +4,6 @@ public class Carnivoro extends Animal {
 
 	@Override
 	public void metodoEnAnimal() {
-		System.out.println("Come carne");
 		
 		
 	}

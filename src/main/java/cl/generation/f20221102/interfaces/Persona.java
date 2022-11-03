@@ -26,6 +26,10 @@ public class Persona extends Humano{
 		super(razonamiento);
 	}
 
+	public Persona() {
+		// TODO Auto-generated constructor stub
+	}
+
 	public String getDni() {
 		return dni;
 	}
